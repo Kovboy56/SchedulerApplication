@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/mylay">
+
+    <TextView
+        android:id="@+id/date_text"
+        android:layout_width="0dp"
+        android:layout_height="13dp"
+        android:layout_marginBottom="16dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="TextView"
+        android:textColor="#5EE41515"
+        android:textColorHint="#5F5F5F"
+        android:textSize="@dimen/term_date_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/sched"
+        app:layout_constraintTop_toBottomOf="@+id/term_list" />
+
+    <ImageView
+        android:id="@+id/sched"
+        android:layout_width="64dp"
+        android:layout_height="55dp"
+        android:outlineAmbientShadowColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_date" />
+
+    <TextView
+        android:id="@+id/term_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:shadowColor="#92473030"
+        android:text="TextView"
+        android:textSize="@dimen/term_list_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/sched"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.184" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="441dp"
+        android:layout_height="62dp"
+        android:background="#00FFFFFF"
+        android:onClick="openNext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
